@@ -1,14 +1,16 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main (){
-int n,sum=0;
-printf("Enter the number:");
-scanf("%d" ,&n);
+int main() {
+    int n, i, sum = 0;
 
-for(int i=1;i<=2*n;i+=2){
-sum =+i;
-}
-printf("Sum of first %d odd numbers =%d\n",n,sum);
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
 
-return 0;
+    for(i = 1; i <= n; i++) {
+        sum += (2 * i - 1);
+    }
+
+    printf("Sum of first %d odd numbers = %d\n", n, sum);
+
+    return 0;
 }
